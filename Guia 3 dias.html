@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/>
+<title>Guia Viva o Resultado — Mobile 9:16 (v6)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&amp;family=Merriweather:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  :root{--w:360px;--h:640px;--verde-1:#5a7d6e;--verde-2:#2d7a5a;--verde-3:#1b4d3e;--off:#f6f5f2;--muted:#6f6f6f;--gold:#c9a961;--dark:#222}
+  html,body{height:100%;font-family:Inter,system-ui,Arial,sans-serif;background:#eee;color:var(--dark)}
+  body{display:flex;align-items:center;justify-content:center;padding:12px}
+  .device{width:var(--w);height:var(--h);background:#fff;border-radius:26px;overflow:hidden;border:12px solid rgba(0,0,0,0.03);box-shadow:0 24px 60px rgba(0,0,0,0.18);display:block}
+  .screens{height:100%;overflow-y:auto;scroll-snap-type:y mandatory;-webkit-overflow-scrolling:touch}
+  .screen{height:100%;scroll-snap-align:start;display:flex;flex-direction:column;padding:14px;gap:12px;background:linear-gradient(180deg,#fff,#fbfbfb)}
+  .cover{position:relative;border-radius:14px;overflow:hidden;flex:1;display:flex;flex-direction:column;justify:flex-start;background:linear-gradient(135deg,var(--verde-1),var(--verde-2));color:#fff;padding:0}
+  .cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.12),transparent);pointer-events:none}
+  .cover-image{width:100%;height:100%;object-fit:cover;display:block}
+  .cover-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:20px;z-index:2;text-align:center}
+  .cover-title{font-family:Merriweather,serif;font-size:20px;font-weight:700;line-height:1.05;margin-bottom:8px}
+  .cover-sub{font-size:12px;opacity:0.95}
+  .cover-strap{margin-top:10px;padding:6px 10px;background:rgba(255,255,255,0.08);border-radius:999px;font-weight:700;font-size:11px}
+  .day-card{background:#fff;border-radius:12px;padding:12px;box-shadow:0 12px 30px rgba(0,0,0,0.06);display:flex;flex-direction:column;gap:10px;flex:1;overflow:auto}
+  .day-head{display:flex;gap:10px;align-items:center}
+  .badge{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:16px}
+  .badge-1{background:linear-gradient(180deg,var(--verde-1),var(--verde-2))}
+  .badge-2{background:linear-gradient(180deg,var(--verde-2),var(--verde-3))}
+  .badge-3{background:linear-gradient(180deg,var(--gold),#b88f4a)}
+  .day-title{font-weight:700;color:var(--verde-3);font-size:16px}
+  .day-desc{font-family:Merriweather,serif;font-size:13px;color:var(--dark)}
+  .checks{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+  .check{font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:flex-start}
+  .check::before{content:"✓";color:var(--verde-2);font-weight:800;margin-top:2px}
+  .media{width:100%;height:190px;border-radius:10px;overflow:hidden}
+  .media img{width:100%;height:100%;object-fit:cover;display:block}
+  .quote{font-family:Merriweather,serif;font-style:italic;border-left:3px solid rgba(0,0,0,0.06);padding-left:10px;color:var(--verde-3);font-size:13px;background:rgba(110,140,120,0.03);border-radius:6px;padding-top:8px;padding-bottom:8px}
+  .cta{display:flex;flex-direction:column;gap:8px;align-items:center;padding:12px;border-radius:12px;background:linear-gradient(135deg,var(--verde-1),var(--verde-2));color:#fff}
+  .cta .highlight{font-weight:800;color:var(--gold)}
+  .qr-grid{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;width:100%}
+  .qr-card{flex:1 1 48%;background:#fff;padding:8px;border-radius:8px;text-align:center;border:1px solid rgba(0,0,0,0.04)}
+  .qr-card img{width:86px;height:86px;border-radius:8px;object-fit:cover}
+  .qr-card p{margin:6px 0 0;font-size:12px;color:#000;font-weight:700}
+  .qr-card small{display:block;font-size:11px;color:#000}
+  .footer{font-size:11px;color:var(--muted);text-align:center;margin-top:6px}
+</style>
+</head>
+<body>
+<div aria-label="Visualização mobile 9:16" class="device">
+<div class="screens">
+<!-- CAPA: imagem Pexels -->
+<section class="screen">
+<div aria-label="Capa" class="cover">
+<img alt="Capa Viva o Resultado" class="cover-image" src="capa.jpeg"/>
+<div class="cover-overlay">
+<div class="cover-title">Guia Rápido — 3 Dias para Iniciar Sua Transformação</div>
+<div class="cover-sub">Energia, leveza e rotina prática para começar hoje.</div>
+<div class="cover-strap">Viva o Resultado • 3 dias</div>
+</div>
+</div>
+</section>
+<!-- DIA 1 -->
+<section class="screen">
+<div aria-labelledby="d1" class="day-card" role="article">
+<div class="day-head">
+<div class="badge badge-1">1</div>
+<div>
+<div class="day-title" id="d1">O Reset Consciente</div>
+<div class="day-desc">Sem dietas radicais. Reencontro com hábitos simples que devolvem energia.</div>
+</div>
+</div>
+<div aria-hidden="false" class="checks">
+<div class="check">Beba 2 a 3 litros de água ao longo do dia.</div>
+<div class="check">Refeição leve com proteína e vegetais.</div>
+<div class="check">10 minutos de caminhada ou alongamento.</div>
+<div class="check">Anote sensações e sono.</div>
+</div>
+<div class="media">
+<img alt="Prato saudável" src="dia1.jpg"/>
+</div>
+<div class="quote">"O corpo responde rápido quando você decide cuidar dele."</div>
+</div>
+</section>
+<!-- DIA 2: imagem Pexels -->
+<section class="screen">
+<div aria-labelledby="d2" class="day-card" role="article">
+<div class="day-head">
+<div class="badge badge-2">2</div>
+<div>
+<div class="day-title" id="d2">A Chave da Energia</div>
+<div class="day-desc">Pequenas escolhas sustentam o dia. Foque em consistência.</div>
+</div>
+</div>
+<div class="checks">
+<div class="check">Mantenha os hábitos do dia 1.</div>
+<div class="check">Café da manhã nutritivo e balanceado.</div>
+<div class="check">Evite ultraprocessados entre as refeições.</div>
+<div class="check">Movimente-se a cada 60–90 minutos.</div>
+</div>
+<div class="media">
+<img alt="Café da manhã saudável" src="dia2.jpeg"/>
+</div>
+<div class="quote">"A energia vem da constância. O corpo só precisa de direção."</div>
+</div>
+</section>
+<!-- DIA 3 -->
+<section class="screen">
+<div aria-labelledby="d3" class="day-card" role="article">
+<div class="day-head">
+<div class="badge badge-3">3</div>
+<div>
+<div class="day-title" id="d3">A Virada da Continuidade</div>
+<div class="day-desc">Você já sentiu diferença. O próximo passo é transformar isso em rotina.</div>
+</div>
+</div>
+<div class="checks" style="margin-top:4px">
+<div class="check">Mantenha água e refeições leves.</div>
+<div class="check">Avalie sono, foco e disposição.</div>
+<div class="check">Envie "RESULTADO" clicando no QR Code do WhatsApp para receber orientação personalizada.</div>
+<div class="check">Se quiser, combine um acompanhamento semanal.</div>
+</div>
+<div class="media">
+<img alt="Movimento e continuidade" src="dia3.jpg"/>
+</div>
+<div class="quote">"Mudar o corpo é só o começo. O que transforma é o estilo de vida certo."</div>
+</div>
+</section>
+<!-- CTA -->
+<section class="screen">
+<div aria-label="Próximo passo" class="day-card" role="region">
+<div style="font-weight:700;font-size:16px">👉 Próximo passo</div>
+<div style="font-size:13px;margin-top:4px">Envie <span class="highlight">RESULTADO</span> clicando no QR Code do WhatsApp para receber o plano de continuidade.</div>
+<div class="qr-grid" style="margin-top:12px">
+<div class="qr-card">
+<a href="https://www.instagram.com/vivaoresultado" style="text-decoration:none; color:inherit; display:block;" target="_blank">
+<img alt="QR Instagram" src="qr_insta.png"/>
+<p>Instagram</p>
+<small>@vivaoresultado</small>
+</a>
+</div>
+<div class="qr-card">
+<a href="https://wa.me/5579996121850" style="text-decoration:none; color:inherit; display:block;" target="_blank">
+<img alt="QR WhatsApp" src="qr_whatsapp.png"/>
+<p>WhatsApp</p>
+<small>Envie RESULTADO</small>
+</a>
+</div>
+<div class="qr-card">
+<a href="https://linktr.ee/vivaoresultado" style="text-decoration:none; color:inherit; display:block;" target="_blank">
+<img alt="QR Linktree" src="qr_linktree.png"/>
+<p>Visite nosso Site</p>
+<small></small>
+</a>
+</div>
+<div class="qr-card">
+<a href="https://clienteherbalife.com.br" style="text-decoration:none; color:inherit; display:block;" target="_blank">
+<img alt="QR Cadastro" src="qr_cadastro.png"/>
+<p>Cliente Premium</p>
+<small>49Y0092874 / CAV</small>
+</a>
+</div>
+</div>
+<div class="footer">Kleiton Cavalcanti | Viva o Resultado • © 2025</div>
+</div>
+</section>
+</div>
+</div>
+</body>
+</html>
